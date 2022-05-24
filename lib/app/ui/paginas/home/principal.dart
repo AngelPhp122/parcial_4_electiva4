@@ -9,17 +9,12 @@ class PrincipalPagina extends StatefulWidget {
   State<PrincipalPagina> createState() => _PrincipalPaginaState();
 }
 
-class _PrincipalPaginaState extends State<PrincipalPagina> { 
+class _PrincipalPaginaState extends State<PrincipalPagina> {
+  
   final _controller = PrincipalController();
 
-  /*final _initialCameraPosition =
-   const CameraPosition(target: LatLng(13.6845738,-89.2334234));*/
  
-@override
-void initState(){
-  _controller.addListener(() { });
-}
-
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -31,14 +26,14 @@ void initState(){
           height: 500,
           child: GoogleMap(
             markers: _controller.markers,
-          //onMapCreated: _controller.onMapCreated,                   
+          onMapCreated: _controller.onMapCreated,
           initialCameraPosition: _controller.initialCameraPosition,
           //myLocationButtonEnabled: false,
           //scrollGesturesEnabled: true,
           //compassEnabled: true,
           //zoomGesturesEnabled: true,
           //mapType: MapType.hybrid,
-          onTap: _controller.onTap
+          //onTap: _controller.onTap
           )
         )],
         //child: [GoogleMap(initialCameraPosition: _initialCameraPosition)],
