@@ -27,14 +27,14 @@ class _PrincipalPaginaState extends State<PrincipalPagina> {
           height: 500,
           child: GoogleMap(
             markers: _controller.markers,
-          onMapCreated: _controller.onMapCreated,                   
+          //onMapCreated: _controller.onMapCreated,                   
           initialCameraPosition: _controller.initialCameraPosition,
           //myLocationButtonEnabled: false,
           //scrollGesturesEnabled: true,
           //compassEnabled: true,
           //zoomGesturesEnabled: true,
           //mapType: MapType.hybrid,
-          //onTap: _controller.onTap
+          onTap: _controller.onTap
           )
         )],
         //child: [GoogleMap(initialCameraPosition: _initialCameraPosition)],
