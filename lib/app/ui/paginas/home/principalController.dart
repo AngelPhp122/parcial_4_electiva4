@@ -6,14 +6,15 @@ class PrincipalController extends ChangeNotifier{
 
 //Map<MarkerId, Marker> _markers = {};
 
-static final Marker _kGooglePleMarker = Marker(
+/*static final Marker _kGooglePleMarker = Marker(
   markerId: MarkerId('hola'),
   infoWindow: InfoWindow(title: 'Google plex'),
   icon: BitmapDescriptor.defaultMarker,
-  position: LatLng(13.6845738,-89.2334234));
+  position: LatLng(13.6845738,-89.2334234));*/
 
  final initialCameraPosition = 
-  const CameraPosition(target: LatLng(13.6845738,-89.2334234));
+  const CameraPosition(target: LatLng(13.6845738,-89.2334234),
+  zoom: 11.50);
 
 //Set<Marker> get markers => _markers.values.toSet();
 

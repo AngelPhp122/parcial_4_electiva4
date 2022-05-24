@@ -11,6 +11,7 @@ class Parcial4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'MovilSV',
       theme: ThemeData(
         primarySwatch: Colors.blue,
