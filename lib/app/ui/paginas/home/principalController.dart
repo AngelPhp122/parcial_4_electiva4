@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:parcial_4_electiva4/app/utilities/mapa_style.dart';
+import 'package:flutter/widgets.dart';
 
 class PrincipalController extends ChangeNotifier{
 
@@ -20,6 +21,6 @@ void onTap(LatLng position){
   final markerId = MarkerId(_markers.length.toString());
   final maker = Marker(markerId: markerId, position: position);
 _markers[markerId] = maker;
-//notifyListeners();
+notifyListeners();
   }
 }
